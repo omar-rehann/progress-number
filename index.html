@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="section-one"></div>
+    <div class="section-two"></div>
+    <div class="section-three">
+        <div class="skill">
+            <h4>Html</h4>
+            <div class="progress">
+                <span style="width:0" data-width="50%"></span>
+            </div>
+            <h4>Css</h4>
+            <div class="progress">
+                <span style="width:0" data-width="20%"></span>
+            </div>
+            <h4>JS</h4>
+            <div class="progress">
+                <span style="width:0" data-width="30%"></span>
+            </div>
+        </div>
+    </div>
+    <script charset="utf-8">
+        window.addEventListener('scroll', function() {
+            let section = document.querySelector(".section-three");
+            let numberSpan = document.querySelectorAll(".progress span");
+            if (window.scrollY >= section.offsetTop) {
+                numberSpan.forEach(function(span) {
+                    span.style.width = span.dataset.width;
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

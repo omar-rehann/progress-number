@@ -1,0 +1,41 @@
+body {
+    background-color: #ddd;
+}
+
+.section-one {
+    min-height: 100vh;
+}
+
+.section-two {
+    min-height: 100vh;
+}
+
+.section-three {
+    min-height: 100vh;
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+
+.section-three .skill {
+    padding: 20px;
+    margin: 10px;
+}
+
+.section-three .skill .progress {
+    width: 60%;
+    height: 4px;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.section-three .skill .progress span {
+    position: absolute;
+    height: 100%;
+    background-color: blue;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+    border-radius: 10px;
+}
